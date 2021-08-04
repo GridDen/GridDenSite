@@ -1,0 +1,165 @@
+/* Общие стили */
+*   {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+/* Оформление header-а */
+.header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 20%;
+    margin-bottom: 10%;
+
+    text-align: center;
+
+    background-image: url(../img/earth.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header_title, .header_info{
+    color: #fff;
+}
+
+.header_title{
+    font-size: 64px;
+    line-height: 200%;
+}
+
+.header_info{
+    font-size: 22px;
+}
+
+/*Стили и анимация стрелки-якоря*/
+.header-arrow{
+    margin-top: 44vh;
+    cursor: pointer;
+}
+
+
+
+/* Общие стили для секций "обо мне", "навыки" "больше информации"*/
+
+.about, .skills, .write{
+    margin-bottom: 10%;
+}
+.section-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-title{
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+/*Оформление секции "Обо мне"*/
+
+.about_photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.about-detail:not(:last-child){
+    margin-bottom: 10%;
+}
+.about-detail span{
+    font-weight: 600;
+    padding-right: 4px;
+}
+
+/* Оформлние таблицы */
+/* Таблица на сайте одна и всегда будет одна, поэтому классов у таблице нет */
+.skills table{
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.skills th, .skills tr, .skills td{
+    text-align: center;
+    padding: 10px;
+}
+
+.skills tr{
+    height: 70px;
+}
+
+.skills thead tr{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+.even-row{
+    background-color: #dadfec;
+}
+
+/* Оформление секции с формами для ввода*/
+
+.write-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.write-input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 12px;
+}
+
+.write-info{
+    font-weight: normal;
+    margin-bottom: 12%;
+}
+.write-phone{
+    margin-right: 10%;
+}
+.write-name{
+    margin-right: auto;
+}
+
+
+
+/* Оформление секции "Кликните сюда...."*/
+.more-title{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hidden-text{
+    
+    margin-top: 5%;
+    text-align: left;
+    line-height: 1.95;
+    
+    display: none;
+}
+.hidden-text span{
+    text-decoration: line-through;
+}
+
+.active-text{
+    display: block;
+    width: 75%;
+}
+
+
